@@ -1,6 +1,7 @@
-# Code for “When Bias Pretends to Be Truth”
+# When Bias Pretends to Be Truth: How Spurious Correlations Undermine Hallucination Detection in LLMs
 
-This folder contains the research code accompanying the paper on spurious‑correlation‑driven hallucinations in LLMs.  
+Code for reproducing https://arxiv.org/pdf/2511.07318
+
 The pipeline has three parts: (1) synthetic biographical data generation with controllable spurious correlation, (2) GPT‑2‑style pretraining/SFT and evaluation, and (3) hallucination‑detection benchmarking (synthetic + real LLMs), plus a toy‑model script for the theory section.
 
 
@@ -122,4 +123,3 @@ Outputs are saved under `output/` and include AUROC curves for shortcut‑streng
 All scripts accept `--seed` (or equivalent) for deterministic runs when possible.  
 Heavy experiments in the paper require multiple GPUs and long training; adjust model size and dataset scale as needed.
 
-# hallucination-by-spurious-correlation-code
